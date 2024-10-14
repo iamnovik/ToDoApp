@@ -143,3 +143,9 @@ D:\SyberryProjects\Beginner\ToDoApp\ToDoApp\bin\Debug\net8.0\ru\Microsoft.CodeAn
 D:\SyberryProjects\Beginner\ToDoApp\ToDoApp\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\SyberryProjects\Beginner\ToDoApp\ToDoApp\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\SyberryProjects\Beginner\ToDoApp\ToDoApp\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SyberryProjects\Beginner\ToDoApp\ToDoApp\obj\Debug\net8.0\ToDoApp.sourcelink.json
+D:\SyberryProjects\Beginner\ToDoApp\ToDoApp\bin\Debug\net8.0\AutoMapper.dll
+D:\SyberryProjects\Beginner\ToDoApp\ToDoApp\bin\Debug\net8.0\ToDo.BLL.dll
+D:\SyberryProjects\Beginner\ToDoApp\ToDoApp\bin\Debug\net8.0\ToDo.DAL.dll
+D:\SyberryProjects\Beginner\ToDoApp\ToDoApp\bin\Debug\net8.0\ToDo.BLL.pdb
+D:\SyberryProjects\Beginner\ToDoApp\ToDoApp\bin\Debug\net8.0\ToDo.DAL.pdb

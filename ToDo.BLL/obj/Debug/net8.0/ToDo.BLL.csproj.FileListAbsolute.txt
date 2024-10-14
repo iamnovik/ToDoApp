@@ -1,0 +1,16 @@
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.BLL\obj\Debug\net8.0\ToDo.BLL.csproj.AssemblyReference.cache
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.BLL\obj\Debug\net8.0\ToDo.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.BLL\obj\Debug\net8.0\ToDo.BLL.AssemblyInfoInputs.cache
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.BLL\obj\Debug\net8.0\ToDo.BLL.AssemblyInfo.cs
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.BLL\obj\Debug\net8.0\ToDo.BLL.csproj.CoreCompileInputs.cache
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.BLL\obj\Debug\net8.0\ToDo.BLL.sourcelink.json
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.BLL\bin\Debug\net8.0\ToDo.BLL.deps.json
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.BLL\bin\Debug\net8.0\ToDo.BLL.dll
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.BLL\bin\Debug\net8.0\ToDo.BLL.pdb
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.BLL\bin\Debug\net8.0\ToDo.DAL.dll
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.BLL\bin\Debug\net8.0\ToDo.DAL.pdb
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.BLL\obj\Debug\net8.0\ToDo.BLL.csproj.Up2Date
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.BLL\obj\Debug\net8.0\ToDo.BLL.dll
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.BLL\obj\Debug\net8.0\refint\ToDo.BLL.dll
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.BLL\obj\Debug\net8.0\ToDo.BLL.pdb
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.BLL\obj\Debug\net8.0\ref\ToDo.BLL.dll

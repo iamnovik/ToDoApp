@@ -1,0 +1,15 @@
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.DAL\obj\Debug\net8.0\ToDo.DAL.csproj.AssemblyReference.cache
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.DAL\obj\Debug\net8.0\ToDo.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.DAL\obj\Debug\net8.0\ToDo.DAL.AssemblyInfoInputs.cache
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.DAL\obj\Debug\net8.0\ToDo.DAL.AssemblyInfo.cs
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.DAL\obj\Debug\net8.0\ToDo.DAL.csproj.CoreCompileInputs.cache
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.DAL\obj\Debug\net8.0\ToDo.DAL.sourcelink.json
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.DAL\bin\Debug\net8.0\ToDo.DAL.deps.json
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.DAL\bin\Debug\net8.0\ToDo.DAL.runtimeconfig.json
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.DAL\bin\Debug\net8.0\ToDo.DAL.dll
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.DAL\bin\Debug\net8.0\ToDo.DAL.pdb
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.DAL\obj\Debug\net8.0\ToDo.DAL.dll
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.DAL\obj\Debug\net8.0\refint\ToDo.DAL.dll
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.DAL\obj\Debug\net8.0\ToDo.DAL.pdb
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.DAL\obj\Debug\net8.0\ToDo.DAL.genruntimeconfig.cache
+D:\SyberryProjects\Beginner\ToDoApp\ToDo.DAL\obj\Debug\net8.0\ref\ToDo.DAL.dll
