@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import TodoItem from './ToDoItem.js';
 import axios from 'axios';
-import './ToDoList.css'
+import { API_BASE_URL } from './apiConfig.js';
+import './ToDoList.css';
+
 const TodoList = () => {
   const [todos, setTodos] = useState([]);
   const [newTodoText, setNewTodoText] = useState('');
   const [statusFilter, setStatusFilter] = useState('all');
   useEffect(() => {
     const fetchTodos = async () => {
-      const response = await axios.get('http://localhost:5118/api/todo');
+      const response = await axios.get(API_BASE_URL);
       setTodos(response.data);
     };
     fetchTodos();
@@ -17,19 +19,19 @@ const TodoList = () => {
   const updateTodo = async (updatedTodo) => {
     try {
         console.log(updatedTodo)
-      await axios.put(`http://localhost:5118/api/todo`, updatedTodo); 
+      await axios.put(API_BASE_URL, updatedTodo); 
       setTodos(todos.map((todo) => (todo.id === updatedTodo.id ? updatedTodo : todo)));
     } catch (error) {
-      console.error('Ошибка при обновлении задачи:', error);
+      console.error('Error', error);
     }
   };
 
   const deleteTodo = async (id) => {
     try {
-      await axios.delete(`http://localhost:5118/api/todo/${id}`);
+      await axios.delete(`${API_BASE_URL}/${id}`);
       setTodos(todos.filter((todo) => todo.id !== id));
     } catch (error) {
-      console.error('Ошибка при удалении задачи:', error);
+      console.error('Error', error);
     }
   };
   const addTodo = async (e) => {
@@ -44,7 +46,7 @@ const TodoList = () => {
     };
 
     try {
-      const response = await axios.post('http://localhost:5118/api/todo', newTodo); 
+      const response = await axios.post(API_BASE_URL, newTodo); 
       setTodos([...todos, response.data]); 
       setNewTodoText(''); 
     } catch (error) {
