@@ -1,19 +1,25 @@
+using System.Reflection;
 using Microsoft.EntityFrameworkCore;
-using ToDoApp.Context;
-using ToDoApp.Repositories;
-using ToDoApp.Services;
+using ToDo.BLL.Extensions;
+using ToDo.DAL.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
-        
-builder.Services.AddScoped<IToDoService, ToDoService>();
-builder.Services.AddScoped<IToDoRepository, ToDoRepository>();
-var app = builder.Build();
+builder.Services.AddControllers();
+builder.Services.AddDataAccessLayer(builder.Configuration);
+builder.Services.AddBusinessLogicLayer(builder.Configuration);
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins", builder =>
+    {
+        builder.AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader();
+    });
+});
+var app = builder.Build();
+app.UseCors("AllowAllOrigins");
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
