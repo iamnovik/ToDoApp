@@ -9,7 +9,7 @@ namespace ToDo.BLL.Services.Implementations;
 
 public class ToDoService(IToDoRepository toDoItemRepository, IMapper mapper) : IToDoService
 {
-    public async Task<ReadToDoItemDto?> CreateToDoItemAsync(CreateToDoItemDto toDoItem)
+    public async Task<ReadToDoItemDto> CreateToDoItemAsync(CreateToDoItemDto toDoItem)
     {
         if (toDoItem == null) throw new ArgumentNullException(nameof(toDoItem));
 
@@ -32,13 +32,7 @@ public class ToDoService(IToDoRepository toDoItemRepository, IMapper mapper) : I
         var item = await toDoItemRepository.GetTodoByIdAsync(id);
         return item == null ? null : mapper.Map<ReadToDoItemDto>(item);
     }
-
-    public Task<UpdateToDoItemDto?> UpdateToDoItemAsync(ToDoItem toDoItem)
-    {
-        throw new NotImplementedException();
-    }
-
-    public async Task<ReadToDoItemDto?> UpdateToDoItemAsync(UpdateToDoItemDto toDoItem)
+    public async Task<ReadToDoItemDto> UpdateToDoItemAsync(UpdateToDoItemDto toDoItem)
     {
         if (toDoItem == null) throw new ArgumentNullException(nameof(toDoItem));
         if (!await toDoItemRepository.ExistsAsync(toDoItem.Id))

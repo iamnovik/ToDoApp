@@ -5,7 +5,7 @@ namespace ToDo.BLL.Services.Interfaces;
 
 public interface IToDoService
 {
-    Task<ReadToDoItemDto?> CreateToDoItemAsync(
+    Task<ReadToDoItemDto> CreateToDoItemAsync(
         CreateToDoItemDto toDoItem);
 
     Task<IEnumerable<ReadToDoItemDto>> GetToDoItemsAsync();
@@ -13,7 +13,7 @@ public interface IToDoService
     Task<ReadToDoItemDto?> GetToDoItemByIdAsync(
         Guid id);
     
-    Task<ReadToDoItemDto?> UpdateToDoItemAsync(
+    Task<ReadToDoItemDto> UpdateToDoItemAsync(
         UpdateToDoItemDto toDoItem);
     
     Task DeleteToDoItemAsync(
