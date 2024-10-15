@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "aFV5ERlHapsMb2wddr1ChmdsUfh7cmQerQeAsgLQOI21TylrpN81sixLemlMZWhQhsQcZCJtzzHha0SbbQefrQ==",
+  "dgSpecHash": "ceD8sn25YO3fUS2fy+lptuBjTXQ3YjtbE5VdGUQupN8FI0l1pFg+AkrNN2fI84uFChyIdEOyXP/S7nzw4dx3pw==",
   "success": true,
   "projectFilePath": "D:\\SyberryProjects\\Beginner\\ToDoApp\\ToDoApp\\ToDoApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\novik\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\novik\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\novik\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\novik\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
@@ -43,5 +44,12 @@
     "C:\\Users\\novik\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512",
     "C:\\Users\\novik\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. (127.0.0.1:49364)"
+    }
+  ]
 }

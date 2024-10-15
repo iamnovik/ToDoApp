@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using ToDoApp.Models;
-using ToDoApp.Services;
+using ToDo.BLL.Models.Dto;
+using ToDo.BLL.Services.Interfaces;
+using ToDoApp.Models.Dto;
+
 
 namespace ToDoApp.Controllers;
 
@@ -8,7 +10,6 @@ namespace ToDoApp.Controllers;
 [Route("api/[controller]")]
 public class TodoController(IToDoService _toDoService) : ControllerBase
 {
-    
         [HttpGet]
         public async Task<IActionResult> GetTodos()
         {
@@ -42,17 +43,17 @@ public class TodoController(IToDoService _toDoService) : ControllerBase
         }
         
         [HttpPost]
-        public async Task<IActionResult> AddTodo([FromBody] ToDoItem newTodo)
+        public async Task<IActionResult> AddTodo([FromBody] CreateToDoItemDto createToDo)
         {
-            if (newTodo == null)
+            if (createToDo == null)
             {
                 return BadRequest("Invalid request.");
             }
 
             try
             {
-                await _toDoService.CreateToDoItemAsync(newTodo);
-                return CreatedAtAction(nameof(GetTodoById), new { id = newTodo.Id }, newTodo);
+                var createdToDo = await _toDoService.CreateToDoItemAsync(createToDo);
+                return CreatedAtAction(nameof(GetTodoById), new { id = createdToDo!.Id }, createdToDo);
             }
             catch (Exception ex)
             {
@@ -60,7 +61,7 @@ public class TodoController(IToDoService _toDoService) : ControllerBase
             }
         }
 
-        public async Task<IActionResult> UpdateTodo([FromBody] ToDoItem updatedTodo)
+        public async Task<IActionResult> UpdateTodo([FromBody] UpdateToDoItemDto updatedTodo)
         {
             try
             {
